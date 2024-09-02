@@ -100,7 +100,7 @@
                     <div class="row d-flex  justify-content-center mb-2" ></div>
                     
                         <div class="col-xl-12 wow fadeInRight" data-wow-delay="0.3s">
-                            <h1 class="display-5 mb-4 text-center">Cancha N° 1</h1>
+                            <h1 class="display-5 mb-4 text-center">Cancha N° 1 - Baby</h1>
                             <hr>
                         </div>
                     </div>
@@ -123,6 +123,44 @@
                                         </tr>
                                     </thead>
                                     <tbody id="table-body" style=" ">
+                                        <!-- Los datos se insertarán aquí -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row d-flex  justify-content-center mb-2" ></div>
+                    
+                        <div class="col-xl-12 wow fadeInRight" data-wow-delay="0.3s">
+                            <h1 class="display-5 mb-4 text-center">Cancha N° 2 - Futsal</h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row d-flex  justify-content-center mb-2" >
+                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center wow fadeInRight" data-wow-delay="0.3s">
+                            <h2 class="text-center">Ubicación de Espacios  </h2>
+
+                            <img src="img/cancha-futsal.png" class="" alt="Image" width="600">
+                        </div>
+                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center wow fadeInRight" data-wow-delay="0.3s" style="font-size: 12px;">
+                            <h2 class="text-center">Información de los Espacios</h2>
+                            <div class="d-flex justify-content-center" style="width: 60%;height: 450px; overflow-y: scroll;">
+                                <table class="table table-striped" style="width: 324px; ">
+                                    <thead style="width: 324px;">
+                                        <tr>
+                                            <th>Espacio</th>
+                                            <th>Medida</th>
+                                            <th>Precio</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-body-futsal" style="">
                                         <!-- Los datos se insertarán aquí -->
                                     </tbody>
                                 </table>
@@ -330,9 +368,44 @@
         
             
         ]
+
+        // Ejemplo de datos JSON
+        const jsonDataFutsal = [
+        { "espacio": "N° 1", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"No disponible"  },
+        { "espacio": "N° 2", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"No disponible"  },
+        { "espacio": "N° 3", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"No disponible"  },
+        { "espacio": "N° 4", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"No disponible"  },
+        { "espacio": "N° 5", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"No disponible"  },
+        { "espacio": "N° 6", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 7", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 8", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 9", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 10", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 11", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 12", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 13", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 14", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 15", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 16", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 17", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 18", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 19", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 20", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 21", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 22", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 23", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 24", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 25", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 26", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 27", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        { "espacio": "N° 28", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"disponible"  },
+        
+        
+            
+        ]
         // Función para cargar datos en la tabla
-        function loadTableData(data) {
-            const tableBody = document.getElementById('table-body');
+        function loadTableData(data, id) {
+            const tableBody = document.getElementById(id);
             tableBody.innerHTML = ''; // Limpiar el contenido existente
 
             data.forEach(item => {
@@ -351,7 +424,8 @@
 
         // Cargar datos cuando la página esté lista
         document.addEventListener('DOMContentLoaded', function() {
-            loadTableData(jsonData);
+            loadTableData(jsonData,"table-body");
+            loadTableData(jsonDataFutsal,"table-body-futsal");
         });
     </script>
     </body>
