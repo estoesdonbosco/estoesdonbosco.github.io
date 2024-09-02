@@ -404,7 +404,7 @@ h1 {
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 58, 102, 0.9), rgba(0, 58, 102, 0.8)), url(../img/donbosco.png);
+    background: linear-gradient(rgb(31 56 27 / 90%), rgb(26 34 26 / 80%)), url(../img/donbosco.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: initial;
