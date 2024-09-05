@@ -165,17 +165,11 @@
                         <span class="text-white">Todos los derechos reservados</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                       Don Bosco
+                           Don Bosco
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Copyright End -->
-
-        <!-- Back to Top -->
+        </div> 
         <button onclick="abrirWhatsApp()" class="btn btn-primary btn-lg-square fixed-bottom-right">
             <i class="fab fa-whatsapp" style="zoom:2"></i> 
         </button>
@@ -201,21 +195,21 @@
 
         const currentUrl = window.location.href;
 
-// Crear un objeto URL para analizar la cadena de consulta
-const urlParams = new URLSearchParams(window.location.search);
+        // Crear un objeto URL para analizar la cadena de consulta
+        const urlParams = new URLSearchParams(window.location.search);
 
-// Evaluar si el parámetro "success" está presente y es "true"
-if (urlParams.get('success') === 'true') {
-    console.log("Success es true");
-    document.getElementById('alert-message').style.display = 'block';
+        // Evaluar si el parámetro "success" está presente y es "true"
+        if (urlParams.get('success') === 'true') {
+            console.log("Success es true");
+            document.getElementById('alert-message').style.display = 'block';
 
-    // Aquí puedes agregar tu código para mostrar una alerta o realizar otra acción
-}
-else{
-    console.log("Success es false");
-    document.getElementById('alert-message').style.display = 'none';
+            // Aquí puedes agregar tu código para mostrar una alerta o realizar otra acción
+        }
+        else{
+            console.log("Success es false");
+            document.getElementById('alert-message').style.display = 'none';
 
-}
+        }
 
     </script>
     </body>
