@@ -3,6 +3,7 @@ function abrirWhatsApp() {
     window.open(url, '_blank');
 }
 
+
 (function ($) {
     "use strict";
 
