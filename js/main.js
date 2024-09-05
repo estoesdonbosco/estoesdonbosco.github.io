@@ -1,5 +1,5 @@
 function abrirWhatsApp() {
-    const url = "https://whatsapp.com/send/?phone=5491151843906";
+    const url = "https://wa.me/5491151843906";
     window.open(url, '_blank');
 }
 
