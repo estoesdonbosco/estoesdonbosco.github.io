@@ -31,6 +31,7 @@
 .bg-primary {
     background-color: var(--bs-primary) !important;
     color: var(--bs-white) !important;
+
 }
 
 .btn-gray {
@@ -138,6 +139,7 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     transition: 0.5s;
+    border-color: var(--bs-secondary) !important;
 }
 
 .btn.btn.btn-primary:hover {
@@ -256,6 +258,47 @@ h1 {
         display: none;    
     }
 }
+
+
+
+/* Efecto de destello intermitente */
+.btn-primary.flash {
+    animation: flash 1s infinite; /* Intermitente continuo */
+}
+
+@keyframes flash {
+0%, 100% {
+    box-shadow: 0 0 60px 2px rgba(0, 143, 55);
+
+}
+50% {
+    box-shadow: 0 0 20px 4px rgba(255, 255, 255);
+
+}
+}
+
+
+.btn-flotante:hover {
+     border-radius: 40px; /* Ancho al pasar el mouse */
+      width: 160px; /* Ancho al pasar el mouse */
+      transition: width 0.3s ease-in-out;
+      
+    }
+
+    /* Estilo para el texto que aparece al hacer hover */
+    .btn-flotante .text {
+     
+      display: none;
+      transition: opacity 0.3s ease-in-out;
+      margin-left: 10px; 
+    }
+    .btn-flotante:hover .text {
+        opacity: 1; 
+        transition: opacity 2s ease-in-out;
+        margin-left: 10px;
+        display: inline-block;
+      }
+
 /*** Topbar End ***/
 
 

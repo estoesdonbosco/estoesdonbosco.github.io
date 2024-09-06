@@ -27,6 +27,7 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+         
     </head>
 
     <body>
@@ -55,13 +56,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="index.html" class="nav-item nav-link ">Inicio</a>
                         <a href="index.html#proyecto" class="nav-item nav-link">Sobre el Proyecto</a>
                         <a href="ecko.html" class="nav-item nav-link">Ecko</a>
+                        <a href="iniciativas.html" class="nav-item nav-link">Iniciativas</a>
 
                         <a href="eventos.html" class="nav-item nav-link ">Eventos</a>
                         <a href="publicidad.html" class="nav-item nav-link active">Sponsors</a>
                         <a href="aportantes.html" class="nav-item nav-link ">Aportantes</a>
+                        <a href="contact.html" class="nav-item nav-link">Contacto</a>
                         <!--<div class="nav-item dropdown">
                             <a href="#" class="nav-link" data-bs-toggle="dropdown"><span class="dropdown-toggle">Pages</span></a>
                             <div class="dropdown-menu m-0">
@@ -87,7 +90,7 @@
             <div class="container text-center py-5" style="max-width: 900px;">
                 <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Espacios de Publicidad</h1>
                 <!--<ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Inicio</a></li>
                     <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
                     <li class="breadcrumb-item active text-secondary">Espacios de Publicidad</li>
                 </ol>-->    
@@ -99,23 +102,78 @@
         <div class="container-fluid service overflow-hidden py-5">
             
 
-
             <div class="row">
                 <div class="col-md-12 mx-auto">
                     <div class="row d-flex  justify-content-center mb-2" >
                     
                         <div class="col-xl-12 ">
-                            <h1 class="display-5 mb-4 text-center">Cancha N° 1 - Futsal</h1>
+                            <h1 class="display-5 mb-4 text-center">Cancha N° 1 - Baby</h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row d-flex  justify-content-center mb-2 wow fadeInRight" data-wow-delay="0.3s" >
+                        <div class="col-sm-12 col-md-5 d-flex flex-column align-items-center ">
+                            <h2 class="text-center">Ubicación de Espacios  </h2>
+
+                            <img src="img/cancha-baby.png" class="" alt="Image" width="600">
+                        </div>
+                        <div class="col-sm-12 col-md-2 d-flex flex-column align-items-center py-4 mt-5">
+                            <h4 class="text-center">Contactanos: </h4>
+                            <p class="text-center">Pedi información de un espacio, tenemos opciones acorde a tú medida.</p>
+                            <button onclick="abrirWhatsAppPublicidad()" class="btn btn-primary btn-xl-square flash">
+                                <i class="fab fa-whatsapp " style="zoom:3"></i> 
+                            </button>
+                            
+
+                        </div>
+                        <div class="col-sm-12 col-md-5 d-flex flex-column align-items-center mx-0 px-0" style="font-size: 12px;">
+                            <h2 class="text-center">Información de los Espacios</h2>
+                            <div class="d-flex justify-content-center" style="width: 60%;height: 450px; overflow-y: scroll;">
+                                <table class="table table-striped" style="width: auto; ">
+                                    <thead style="width: 324px;">
+                                        <tr>
+                                            <th>Espacio</th>
+                                            <th>Medida</th>
+                                            <th>Precio</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-body" style=" ">
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+         <!--
+            <div class="row">
+                <div class="col-md-12 mx-auto">
+                    <div class="row d-flex  justify-content-center mb-2" >
+                    
+                        <div class="col-xl-12 ">
+                            <h1 class="display-5 mb-4 text-center"></h1>
                             <hr>
                         </div>
                     </div>
                     <div class="row d-flex  justify-content-center mb-2  wow fadeInRight" data-wow-delay="0.3s" >
-                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center">
-                            <h2 class="text-center">Ubicación de Espacios  </h2>
+                        <div class="col-sm-12 col-md-5 d-flex flex-column align-items-center">
+                            <h2 class="text-center">Cancha N° 2 - Futsal  </h2>
 
                             <img src="img/cancha-futsal.png" class="" alt="Image" width="600">
                         </div>
-                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center" style="font-size: 12px;">
+                        <div class="col-sm-12 col-md-2 d-flex flex-column align-items-center py-4 mt-5">
+                            <h4 class="text-center">Contactanos: </h4>
+                            <p class="text-center">Pedi información de un espacio, tenemos opciones acorde a tú medida.</p>
+                            <button onclick="abrirWhatsAppPublicidad()" class="btn btn-primary btn-xl-square flash">
+                                <i class="fab fa-whatsapp " style="zoom:3"></i> 
+                            </button>
+                            
+
+                        </div>
+                         
+                        <div class="col-sm-12 col-md-5 d-flex flex-column align-items-center" style="font-size: 12px;">
                             <h2 class="text-center">Información de los Espacios</h2>
                             <div class="d-flex justify-content-center" style="width: 60%;height: 450px; overflow-y: scroll;">
                                 <table class="table table-striped" style="width: 324px; ">
@@ -128,7 +186,7 @@
                                         </tr>
                                     </thead>
                                     <tbody id="table-body-futsal" style="">
-                                        <!-- Los datos se insertarán aquí -->
+                                       
                                     </tbody>
                                 </table>
                             </div>
@@ -136,161 +194,24 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 mx-auto">
-                    <div class="row d-flex  justify-content-center mb-2" >
-                    
-                        <div class="col-xl-12 ">
-                            <h1 class="display-5 mb-4 text-center">Cancha N° 2 - Baby</h1>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row d-flex  justify-content-center mb-2 wow fadeInRight" data-wow-delay="0.3s" >
-                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center ">
-                            <h2 class="text-center">Ubicación de Espacios  </h2>
-
-                            <img src="img/cancha-baby.png" class="" alt="Image" width="600">
-                        </div>
-                        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center" style="font-size: 12px;">
-                            <h2 class="text-center">Información de los Espacios</h2>
-                            <div class="d-flex justify-content-center" style="width: 60%;height: 450px; overflow-y: scroll;">
-                                <table class="table table-striped" style="width: 324px; ">
-                                    <thead style="width: 324px;">
-                                        <tr>
-                                            <th>Espacio</th>
-                                            <th>Medida</th>
-                                            <th>Precio</th>
-                                            <th>Estado</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="table-body" style=" ">
-                                        <!-- Los datos se insertarán aquí -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="row">
-                <div class="col-md-12 mx-auto">
-                    <div class="row d-flex align-items-center justify-content-center mb-2">
-                        <div class="col-md-2">
-                            <div class="bd-example m-0 border-0">
-                                <svg class="bd-placeholder-img rounded float-start " width="200" height="240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6" dy=".3em">200x240</text></svg>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                             
-                            <b>Ubicacion:</b> Cancha N°1 <b>Espacio:</b> N° 1<br>
-                            <b>Medida:</b> 200 x 240 cm<br>
-                            <b>Precio:</b> $150.000<br>
-                            <b>Estilo:</b> Full Color<br>
-                             
-                            <b>Estado:</b><span class="badge bg-success">Disponible</span>
-                            
-                        </div>
-          
-                        <div class="col-md-2">
-                            <div class="bd-example m-0 border-0">
-                                <svg class="bd-placeholder-img rounded float-start " width="200" height="240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6" dy=".3em">200x240</text></svg>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                             
-                            <b>Ubicacion:</b> Cancha N°1 <b>Espacio:</b> N° 2<br>
-                            <b>Medida:</b> 200 x 240 cm<br>
-                            <b>Precio:</b> $150.000<br>
-                            <b>Estilo:</b> Full Color<br>
-                             
-                            <b>Estado:</b><span class="badge bg-success">Disponible</span>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="row d-flex align-items-center justify-content-center mb-2">
-                        <div class="col-md-2">
-                            <div class="bd-example m-0 border-0">
-                                <svg class="bd-placeholder-img rounded float-start " width="200" height="240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6" dy=".3em">200x240</text></svg>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                             
-                            <b>Ubicacion:</b> Cancha N°1 <b>Espacio:</b> N° 3<br>
-                            <b>Medida:</b> 200 x 240 cm<br>
-                            <b>Precio:</b> $150.000<br>
-                            <b>Estilo:</b> Full Color<br>
-                             
-                            <b>Estado:</b><span class="badge bg-success">Disponible</span>
-                            
-                        </div>
-          
-                        <div class="col-md-2">
-                            <div class="bd-example m-0 border-0">
-                                <svg class="bd-placeholder-img rounded float-start " width="200" height="240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6" dy=".3em">200x240</text></svg>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                             
-                            <b>Ubicacion:</b> Cancha N°1 <b>Espacio:</b> N° 4<br>
-                            <b>Medida:</b> 200 x 240 cm<br>
-                            <b>Precio:</b> $150.000<br>
-                            <b>Estilo:</b> Full Color<br>
-                             
-                            <b>Estado:</b><span class="badge bg-success">Disponible</span>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="row d-flex align-items-center justify-content-center mb-2">
-                        <div class="col-md-2">
-                            <div class="bd-example m-0 border-0">
-                                <svg class="bd-placeholder-img rounded float-start " width="200" height="240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6" dy=".3em">200x240</text></svg>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                             
-                            <b>Ubicacion:</b> Cancha N°1 <b>Espacio:</b> N° 5<br>
-                            <b>Medida:</b> 200 x 240 cm<br>
-                            <b>Precio:</b> $150.000<br>
-                            <b>Estilo:</b> Full Color<br>
-                             
-                            <b>Estado:</b><span class="badge bg-success">Disponible</span>
-                            
-                        </div>
-          
-                        <div class="col-md-2">
-                            <div class="bd-example m-0 border-0">
-                                <svg class="bd-placeholder-img rounded float-start " width="200" height="240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="35%" y="50%" fill="#dee2e6" dy=".3em">200x240</text></svg>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                             
-                            <b>Ubicacion:</b> Cancha N°1 <b>Espacio:</b>N° 6<br>
-                            <b>Medida:</b> 200 x 240 cm<br>
-                            <b>Precio:</b> $150.000<br>
-                            <b>Estilo:</b> Full Color<br>
-                             
-                            <b>Estado:</b><span class="badge bg-success">Disponible</span>
-                            
-                        </div>
-                        
-                    </div>
-                
-                </div>
-            </div>-->
             
+        -->
 
-            <!--<div class="container py-5">
-                <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h5 class="sub-title text-primary px-3">Visa Categories</h5>
-                    </div>
-                    <h1 class="display-5 mb-4">Enabling Your Immigration Successfully</h1>
-                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
-                </div>
-                
-            </div>-->
+        <div class="row py-2">
+            <div class="col-md-10 mx-auto">
+                <hr>
+                <small>
+                    <b>CONDICIONES DE PUBLICACIÓN:</b><br>
+
+                    1. Se mantiene la posición del cartel todo 2025.<br>
+                    2. Se renueva en noviembre 2025<br>
+                    3. El costo del cartel y colocacion queda a cargo del club<br>
+                    4. Se puede entregar factura electronica o nota agradecimiento membretada y sellada<br>
+                    5. Se solicita permiso al sponsor para tambien incluirlo en redes sociales del club<br>
+                    6. El sponsor tiene que facilitar logo en buena calidad (pdf,png,coredraw,jpg) + los datos que quiera incluir (direccion,telefono,redes)<br>
+                </small>
+            </div>
+        </div>
         </div>
         <!-- Services End -->
 
@@ -316,11 +237,26 @@
         <!-- Copyright End -->
 
         <!-- Back to Top -->
-        <button onclick="abrirWhatsApp()" class="btn btn-primary btn-lg-square fixed-bottom-right">
-            <i class="fab fa-whatsapp" style="zoom:2"></i> 
+        <button onclick="abrirWhatsApp()" class="btn-flotante flash btn btn-primary flash btn-lg-square fixed-bottom-right" style="margin-bottom: 180px;">
+            <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
+            <span class="text" style="color:#fff">Donar $10000</span>
         </button>
+        <button onclick="abrirWhatsApp()" class="btn-flotante flash btn btn-primary flash btn-lg-square fixed-bottom-right" style="margin-bottom: 120px;">
+            <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
+            <span class="text" style="color:#fff">Donar $5000</span>
+        </button>
+        <button onclick="abrirWhatsApp()" class="btn-flotante flash btn btn-primary flash btn-lg-square fixed-bottom-right" style="margin-bottom: 60px;">
+            <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
+            <span class="text" style="color:#fff">Donar $1000</span>
+        </button>
+        <button onclick="abrirWhatsApp()" class="btn-flotante btn btn-primary flash btn-lg-square fixed-bottom-right">
+            <i class="fab fa-whatsapp" style="zoom:2"></i>
+            <span class="text" style="color:#fff">Chatea</span> 
+        </button>
+        <!--    
+            <a href="#" class="btn btn-gray btn-lg-square back-to-top"><i class="fa fa-arrow-up" style="color:white"></i></a>   
+        -->
         
-        <a href="#" class="btn btn-gray btn-lg-square back-to-top"><i class="fa fa-arrow-up" style="color:white"></i></a>   
         <!-- Back to Top -->
         
     <!-- JavaScript Libraries -->
@@ -339,34 +275,30 @@
     <script>
         // Ejemplo de datos JSON
         const jsonData = [
-        { "espacio": "N° 1", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 2", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 3", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 4", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 5", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"No Disponible"  },
-        { "espacio": "N° 6", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 7", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 8", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 9", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 10", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 11", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 12", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 13", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 14", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 15", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 16", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 17", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 18", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 19", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 20", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 21", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 22", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 23", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 24", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 25", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 26", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 27", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 28", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "1", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "2", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "3", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "4", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "5", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "6", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "7", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "8", "medida":"2 x 2","precio": "$ 700.000","estado":"Disponible"  },
+        { "espacio": "9", "medida":"3 x 1","precio": "$ 600.000","estado":"Disponible"  },
+        { "espacio": "10", "medida":"3 x 1","precio": "$ 600.000","estado":"Disponible"  },
+
+        { "espacio": "11", "medida":"3.5 x 1","precio": "$ 500.000","estado":"Disponible"  },
+        { "espacio": "12", "medida":"3.5 x 1.5","precio": "$ 600.000","estado":"Disponible"  },
+        { "espacio": "13", "medida":"3.5 x 1.5","precio": "$ 600.000","estado":"Disponible"  },
+        { "espacio": "14", "medida":"4 x 2","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "15", "medida":"3.5 x 1.5","precio": "$ 600.000","estado":"Disponible"  },
+        { "espacio": "16", "medida":"3.5 x 1.5","precio": "$ 600.000","estado":"Disponible"  },
+        
+        { "espacio": "17", "medida":"3.5 x 1.5","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "18", "medida":"3 x 1","precio": "$ 600.000","estado":"Disponible"  },
+        { "espacio": "19", "medida":"3.5 x 1.5","precio": "$ 500.000","estado":"Disponible"  },
+        { "espacio": "20", "medida":"3.5 x 1.5","precio": "$ 500.000","estado":"Disponible"  },
+        { "espacio": "21", "medida":"3 x 1","precio": "$ 600.000","estado":"Disponible"  }, 
+         
         
         
             
@@ -374,34 +306,34 @@
 
         // Ejemplo de datos JSON
         const jsonDataFutsal = [
-        { "espacio": "N° 1", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 2", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 3", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 4", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 5", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 6", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 7", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 8", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 9", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 10", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 11", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 12", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 13", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 14", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 15", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 16", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 17", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 18", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 19", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 20", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 21", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 22", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 23", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 24", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 25", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 26", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 27", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 28", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "1", "medida":"200 x 240","precio": "-","estado":"No Disponible"  },
+        { "espacio": "2", "medida":"200 x 240","precio": "-","estado":"No Disponible"  },
+        { "espacio": "3", "medida":"200 x 240","precio": "-","estado":"No Disponible"  },
+        { "espacio": "4", "medida":"200 x 240","precio": "-","estado":"No Disponible"  },
+        { "espacio": "5", "medida":"200 x 240","precio": "-","estado":"No Disponible"  },
+        { "espacio": "6", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "7", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "8", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "9", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "10", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "11", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "12", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "13", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "14", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "15", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "16", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "17", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "18", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "19", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "20", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "21", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "22", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "23", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "24", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "25", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "26", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "27", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
+        { "espacio": "28", "medida":"200 x 240","precio": "$ 1.000.000","estado":"Disponible"  },
         
         
             

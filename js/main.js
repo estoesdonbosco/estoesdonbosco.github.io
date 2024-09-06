@@ -1,8 +1,14 @@
 function abrirWhatsApp() {
-    const url = "https://wa.me/+5491151843906?text=Hola%20estoy%20interesado%20en%20ayudarlos.";
+    const url = "https://chat.whatsapp.com/HvXqVxPXjB5J2mlRwec4w8";
     window.open(url, '_blank');
 }
 
+
+
+function abrirWhatsAppPublicidad() {
+    const url = "https://wa.me/+5491124953030?text=Hola%20estoy%20interesado%20en%20en%20publicar%20mi%20empresa.";
+    window.open(url, '_blank');
+}
 
 (function ($) {
     "use strict";

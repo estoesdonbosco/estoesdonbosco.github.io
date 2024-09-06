@@ -1,0 +1,86 @@
+ 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .image-container {
+      display: grid;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-container div {
+      width: 100%;
+      height: 100%;
+      background-image: url('img/cancha1.jpeg'); /* Ruta a la imagen */
+      background-size: var(--bg-width) var(--bg-height); /* Tamaño de la imagen */
+      background-repeat: no-repeat;
+      opacity: 0;
+      animation: appear 0.6s ease-in-out forwards;
+      /* Aplicar un retraso secuencial basado en el orden */
+      animation-delay: calc(var(--i) * 0.01s);
+    }
+
+    @keyframes appear {
+      from {
+        transform: scale(0);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+ 
+
+<div class="image-container" id="imageContainer">
+  <!-- Los fragmentos se generarán dinámicamente aquí -->
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('imageContainer');
+    const imageUrl = 'img/cancha1.jpeg'; // Ruta a la imagen
+    const fragmentSize = 50; // Tamaño de cada fragmento (50x50px)
+
+    // Obtener tamaño de la pantalla
+    const containerWidth = window.innerWidth;
+    const containerHeight = window.innerHeight;
+
+    // Calcular número de columnas y filas
+    const columns = Math.ceil(containerWidth / fragmentSize);
+    const rows = Math.ceil(containerHeight / fragmentSize);
+
+    // Establecer tamaño del fondo
+    const backgroundWidth = columns * fragmentSize;
+    const backgroundHeight = rows * fragmentSize;
+
+    // Aplicar tamaño de fondo a la cuadrícula
+    container.style.setProperty('--bg-width', `${backgroundWidth}px`);
+    container.style.setProperty('--bg-height', `${backgroundHeight}px`);
+    
+    // Configurar la cuadrícula
+    container.style.gridTemplateColumns = `repeat(${columns}, ${fragmentSize}px)`;
+    container.style.gridTemplateRows = `repeat(${rows}, ${fragmentSize}px)`;
+
+    // Generar los fragmentos
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < columns; col++) {
+        const fragment = document.createElement('div');
+        fragment.style.backgroundPosition = `-${col * fragmentSize}px -${row * fragmentSize}px`;
+        fragment.style.setProperty('--i', col + row * columns);
+        container.appendChild(fragment);
+      }
+    }
+  });
+</script>
+ 
