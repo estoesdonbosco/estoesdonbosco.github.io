@@ -79,13 +79,7 @@
  
 
         <!-- Header Start -->
-         <!--<div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Espacios de Publicidad</h1>
-                 
-            </div>
-        </div>-->
-        <!-- Header End -->
+          <!-- Header End -->
 
         <!-- Services Start -->
         <div class="container-fluid service overflow-hidden py-1">
@@ -95,13 +89,13 @@
             <div class="row">
                 <div class="container py-5">
                     <div class="row">
-                        <div class="col-md-4  wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="col-md-4">
                             <div class="rounded text-center mx-auto">
                                 <img src="img/ecko.jpeg" class="" style="border-radius:20px;margin-bottom: -7px;height:550px;" alt="Image">
                                 
                             </div>
                         </div>
-                        <div class="col-md-8 wow fadeInRight " data-wow-delay="0.3s">
+                        <div class="col-md-8">
                             <div class="py-0 mt-4">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -133,16 +127,21 @@
                                      
                                 </p>
                                 
-                                <div class="row mx-auto text-center">
-                                    <div class="col-xs-12">
-                                        <a style="width:180px" class="my-2 mx-1 btn btn-primary flash border-secondary rounded-pill text-white py-3 px-3 wow fadeInUp" data-wow-delay="0.7s" onclick="abrirWhatsApp()">Donar $ 1.000 </a>
-                                    
-                                        
-
-                                        <a style="width:180px" class="my-2 mx-1 btn btn-primary flash  border-secondary rounded-pill text-white py-3 px-3 wow fadeInUp" data-wow-delay="0.7s" onclick="abrirWhatsApp()">Donar $ 5.000 </a>
-                                        
-                                        <a style="width:180px" class="btn btn-primary flash  border-secondary rounded-pill text-white py-3 px-3 wow fadeInUp" data-wow-delay="0.7s" onclick="abrirWhatsApp()">Donar $ 10.000 </a>
-                                    
+                                <div class="col-xl-12" style="height: 300px;">
+                                    <div class="row mx-auto text-center">
+                                        <div class="col-xs-12">
+                                            <div class="row  mx-auto text-center">
+                                                <button class="btn btn-success btn-lg col-xs-10 col-md-3 my-2   mx-1" type="button">Donar $1.000</button>
+                                           
+                                         
+                                                <button class="btn btn-primary btn-lg  col-xs-10 col-md-3 my-2   mx-1" type="button">Donar $5.000</button>
+                                          
+                                                <button class="btn btn-warning btn-lg  col-xs-10 col-md-3 my-2 mx-1" type="button">Donar $10.000</button>
+                                            </div>    
+                                        </div>
+                                            
+    
+                                          
                                     </div>
                                 </div>
                             </div>
@@ -177,18 +176,34 @@
         <!-- Copyright End -->
 
         <!-- Back to Top -->
-        <button onclick="abrirWhatsApp()" class="btn-flotante flash btn btn-primary flash btn-lg-square fixed-bottom-right" style="margin-bottom: 180px;">
+        <button type="button" class="btn-flotante flash btn btn-warning btn-lg-square fixed-bottom-right" style="margin-bottom: 60px;" data-bs-toggle="modal" data-bs-target="#donationModal">
             <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
-            <span class="text" style="color:#fff">Donar $10000</span>
+            <span class="text" style="color:#fff">Donar</span>
         </button>
-        <button onclick="abrirWhatsApp()" class="btn-flotante flash btn btn-primary flash btn-lg-square fixed-bottom-right" style="margin-bottom: 120px;">
-            <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
-            <span class="text" style="color:#fff">Donar $5000</span>
-        </button>
-        <button onclick="abrirWhatsApp()" class="btn-flotante flash btn btn-primary flash btn-lg-square fixed-bottom-right" style="margin-bottom: 60px;">
-            <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
-            <span class="text" style="color:#fff">Donar $1000</span>
-        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="donationModalLabel">Selecciona una opción</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Elige el monto que deseas donar:</p>
+                <!-- Botones dentro del modal -->
+                <div class="d-grid gap-2">
+                  <button class="btn btn-success btn-lg flash" type="button">Donar $1.000</button>
+                  <button class="btn btn-primary btn-lg flash" type="button">Donar $5.000</button>
+                  <button class="btn btn-warning btn-lg flash" type="button">Donar $10.000</button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <button onclick="abrirWhatsApp()" class="btn-flotante btn btn-primary flash btn-lg-square fixed-bottom-right">
             <i class="fab fa-whatsapp" style="zoom:2"></i>
             <span class="text" style="color:#fff">Chatea</span> 

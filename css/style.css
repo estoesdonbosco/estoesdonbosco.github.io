@@ -265,6 +265,13 @@ h1 {
 .btn-primary.flash {
     animation: flash 1s infinite; /* Intermitente continuo */
 }
+.btn-success.flash {
+    animation: flash 1s infinite; /* Intermitente continuo */
+}
+.btn-warning.flash {
+    animation: flash 1s infinite; /* Intermitente continuo */
+}
+
 
 @keyframes flash {
 0%, 100% {
@@ -280,7 +287,7 @@ h1 {
 
 .btn-flotante:hover {
      border-radius: 40px; /* Ancho al pasar el mouse */
-      width: 160px; /* Ancho al pasar el mouse */
+      /*width: 160px;*/ /* Ancho al pasar el mouse */
       transition: width 0.3s ease-in-out;
       
     }
@@ -296,7 +303,7 @@ h1 {
         opacity: 1; 
         transition: opacity 2s ease-in-out;
         margin-left: 10px;
-        display: inline-block;
+        /*display: inline-block;*/
       }
 
 /*** Topbar End ***/
