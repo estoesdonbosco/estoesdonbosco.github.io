@@ -272,6 +272,10 @@ h1 {
     animation: flash 1s infinite; /* Intermitente continuo */
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    top: 10%;
+}
 
 @keyframes flash {
 0%, 100% {
