@@ -58,11 +58,15 @@
                         <a href="index.html" class="nav-item nav-link ">Inicio</a>
                         <a href="index.html#proyecto" class="nav-item nav-link">Sobre el Proyecto</a>
                         <a href="ecko.html" class="nav-item nav-link active">Ecko</a>
+                        <a href="colabora.html" class="nav-item nav-link">Colaborá</a>
+
                         <a href="iniciativas.html" class="nav-item nav-link">Iniciativas</a>
 
-                        <a href="eventos.html" class="nav-item nav-link ">Eventos</a>
+                        <!--<a href="eventos.html" class="nav-item nav-link">Eventos</a>-->
                         <a href="publicidad.html" class="nav-item nav-link ">Sponsors</a>
-                        <a href="aportantes.html" class="nav-item nav-link ">Aportantes</a>
+                        <!--<a href="aportantes.html" class="nav-item nav-link ">Aportantes</a>-->
+                        <a href="comision.html" class="nav-item nav-link">Comisión</a>
+
                         <a href="contact.html" class="nav-item nav-link">Contacto</a>
                          
                     </div>
@@ -98,8 +102,23 @@
                             </div>
                         </div>
                         <div class="col-md-8 wow fadeInRight " data-wow-delay="0.3s">
-                            <div class="py-0">
-                                <h5 class="sub-title pe-3">Nuestro Padrino</h5>
+                            <div class="py-0 mt-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="">Nuestro Padrino
+                                            <a href="#" style="width:180px;" class=""
+                                            onclick="abrirSpotify()"> 
+                                            <img src="img/spotify.png" class="img-fluid" alt="" width="24">
+                                          
+                                            <small style="text-decoration: underline;">Sumate a la Playlist </small>
+                                        </a>
+                                        </h5>
+                                    </div>
+                                     
+                                    
+                                </div>
+                                
+                                
                                 <h1 class="display-24 mb-4">Ecko: de la cancha al escenario del Club</h1>
                                 <p class="mb-4">Ecko, el aclamado cantante que ha hecho vibrar a sus seguidores con sus ritmos urbanos y su potente voz, tiene una profunda conexión con nuestra comunidad. Antes de convertirse en un nombre conocido en la música, Ecko, junto a su hermano, jugó en nuestra cancha, viviendo sus primeras experiencias futbolísticas en el club.
                                     <br><br>
@@ -113,6 +132,7 @@
                                     <b>¡Hacé tu aporte hoy y sé parte de esta transformación!</b>
                                      
                                 </p>
+                                
                                 <div class="row mx-auto text-center">
                                     <div class="col-xs-12">
                                         <a style="width:180px" class="my-2 mx-1 btn btn-primary flash border-secondary rounded-pill text-white py-3 px-3 wow fadeInUp" data-wow-delay="0.7s" onclick="abrirWhatsApp()">Donar $ 1.000 </a>
@@ -192,99 +212,7 @@
     <script src="js/main.js"></script>
 
     <script>
-        // Ejemplo de datos JSON
-        const jsonData = [
-        { "espacio": "N° 1", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 2", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 3", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 4", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 5", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"No Disponible"  },
-        { "espacio": "N° 6", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 7", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 8", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 9", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 10", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 11", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 12", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 13", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 14", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 15", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 16", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 17", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 18", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 19", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 20", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 21", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 22", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 23", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 24", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 25", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 26", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 27", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 28", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
         
-        
-            
-        ]
-
-        // Ejemplo de datos JSON
-        const jsonDataFutsal = [
-        { "espacio": "N° 1", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 2", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 3", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 4", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 5", "medida":"200 x 240 cm","precio": "-","estado":"No Disponible"  },
-        { "espacio": "N° 6", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 7", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 8", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 9", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 10", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 11", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 12", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 13", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 14", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 15", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 16", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 17", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 18", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 19", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 20", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 21", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 22", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 23", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 24", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 25", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 26", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 27", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        { "espacio": "N° 28", "medida":"200 x 240 cm","precio": "$ 1.000.000","estado":"Disponible"  },
-        
-        
-            
-        ]
-        // Función para cargar datos en la tabla
-        function loadTableData(data, id) {
-            const tableBody = document.getElementById(id);
-            tableBody.innerHTML = ''; // Limpiar el contenido existente
-
-            data.forEach(item => {
-
-                let clase= item.estado == "Disponible" ? "bg-success" : "bg-danger";
-                const row = `<tr>
-                                <td>${item.espacio}</td>
-                                <td>${item.medida}</td>
-                                <td>${item.precio}</td>
-                                <td><span class="badge `+clase+`">${item.estado}</span></td>
-                                
-                            </tr>`;
-                tableBody.innerHTML += row;
-            });
-        }
-
-        // Cargar datos cuando la página esté lista
-        document.addEventListener('DOMContentLoaded', function() {
-            loadTableData(jsonData,"table-body");
-            loadTableData(jsonDataFutsal,"table-body-futsal");
-        });
     </script>
     </body>
 

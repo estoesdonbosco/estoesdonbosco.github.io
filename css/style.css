@@ -522,15 +522,17 @@ h1 {
     background-size: cover;
 }
 
-
-@media (max-width: 768px) {
+.carousel-header {
+    height: 650px !important;
+}
+@media (max-width: 767px) {
     .carousel-header {
-        height: 700px !important;
+        height: 830px !important;
     }
 
     .carousel-header .carousel-control-prev .carousel-control-prev-icon,
     .carousel-header .carousel-control-next .carousel-control-next-icon {
-        margin-top: 500px;
+        margin-top: 200px;
     }
 
     .carousel-header .carousel-control-prev .carousel-control-prev-icon {

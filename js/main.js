@@ -10,6 +10,11 @@ function abrirWhatsAppPublicidad() {
     window.open(url, '_blank');
 }
 
+function abrirSpotify() {
+    const url = "https://open.spotify.com/playlist/5HMGeV7r8I6ell1bxiJPBy?si=f7a05b0edfcb47d2";
+    window.open(url, '_blank');
+}
+
 (function ($) {
     "use strict";
 
