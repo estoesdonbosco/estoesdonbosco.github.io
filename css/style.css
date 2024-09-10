@@ -274,7 +274,9 @@ h1 {
 
 .carousel-control-prev,
 .carousel-control-next {
-    top: 10%;
+    /*top: 10%;*/
+    top: 50%;
+    height: 50px;
 }
 
 @keyframes flash {
