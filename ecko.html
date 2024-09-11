@@ -58,7 +58,7 @@
                         <a href="index.html" class="nav-item nav-link ">Inicio</a>
                         <a href="index.html#proyecto" class="nav-item nav-link">Sobre el Proyecto</a>
                         <a href="ecko.html" class="nav-item nav-link active">Ecko</a>
-                        <!--<a href="colabora.html" class="nav-item nav-link"><span class="badge bg-warning" style="font-size: 16px;">Colaborá</span></a>-->
+                        <a href="colabora.html" class="nav-item nav-link botonesDePago"><span class="badge bg-warning " style="font-size: 16px;">Colaborá</span></a>
                         <a href="iniciativas.html" class="nav-item nav-link">Iniciativas</a>
 
                         <!--<a href="eventos.html" class="nav-item nav-link">Eventos</a>-->
@@ -125,7 +125,7 @@
                                     <br><br>
                                     Para celebrar y apoyar esta renovación, Ecko ofrecerá un espectacular show en nuestra cancha. Será una noche para disfrutar de su música y unirnos en torno a la revitalización de nuestro espacio deportivo.
                                     <br><br>
-                                    Te invitamos a colaborar con el proyecto y hacer posible este cambio. Puedes contribuir con $1.000, $3.000, $5.000 o $10.000 para ayudar a construir una cancha de primer nivel que beneficiará a todos. Tu apoyo es fundamental para hacer realidad este sueño.
+                                    Te invitamos a r con el proyecto y hacer posible este cambio. Puedes contribuir con $1.000, $3.000, $5.000 o $10.000 para ayudar a construir una cancha de primer nivel que beneficiará a todos. Tu apoyo es fundamental para hacer realidad este sueño.
                                     <b>¡Hacé tu aporte hoy y sé parte de esta transformación!</b>
                                      
                                 </p>
@@ -135,18 +135,18 @@
                                     <div class="row mx-auto text-center">
                                         <div class="col-xs-12">
                                             <div class="row  mx-auto text-center d-none d-sm-block">
-                                                <button class="btn btn-success btn-lg col-md-2 my-2 mx-1" type="button" onclick="link1000()">Donar <br>$1.000</button>
-                                                <button class="btn btn-success btn-lg col-md-2 my-2 mx-1" type="button" onclick="link3000()">Donar <br>$3.000</button>
-                                                <button class="btn btn-primary btn-lg col-md-2 my-2 mx-1" type="button" onclick="link5000()">Donar <br>$5.000</button>
-                                                <button class="btn btn-warning btn-lg col-md-2 my-2 mx-1" type="button" onclick="link10000()">Donar <br>$10.000</button>
-                                                <button class="btn btn-warning btn-lg col-md-2 my-2 mx-1" type="button" onclick="link25000()">Donar <br>$25.000</button>
+                                                <button class="btn btn-success btn-lg col-md-2 my-2 mx-1" type="button" onclick="link1000()"> $1.000</button>
+                                                <button class="btn btn-success btn-lg col-md-2 my-2 mx-1" type="button" onclick="link3000()"> $3.000</button>
+                                                <button class="btn btn-primary btn-lg col-md-2 my-2 mx-1" type="button" onclick="link5000()"> $5.000</button>
+                                                <button class="btn btn-warning btn-lg col-md-2 my-2 mx-1" type="button" onclick="link10000()"> $10.000</button>
+                                                <button class="btn btn-warning btn-lg col-md-2 my-2 mx-1" type="button" onclick="link25000()"> $25.000</button>
                                             </div>   
                                             <div class="row  mx-auto text-center d-block d-sm-none">
-                                                <button class="btn btn-success btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link1000()">Donar $1.000</button>
-                                                <button class="btn btn-success btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link3000()">Donar $3.000</button>
-                                                <button class="btn btn-primary btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link5000()">Donar $5.000</button>
-                                                <button class="btn btn-warning btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link10000()">Donar $10.000</button>
-                                                <button class="btn btn-warning btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link25000()">Donar $25.000</button>
+                                                <button class="btn btn-success btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link1000()"> $1.000</button>
+                                                <button class="btn btn-success btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link3000()"> $3.000</button>
+                                                <button class="btn btn-primary btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link5000()"> $5.000</button>
+                                                <button class="btn btn-warning btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link10000()"> $10.000</button>
+                                                <button class="btn btn-warning btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link25000()"> $25.000</button>
                                             </div>    
                                         </div>
                                             
@@ -189,7 +189,7 @@
         <div class="botonesDePago">
             <button type="button" class="btn-flotante flash btn btn-warning btn-lg-square fixed-bottom-right" style="margin-bottom: 60px;" data-bs-toggle="modal" data-bs-target="#donationModal">
                 <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
-                <span class="text" style="color:#fff">Donar</span>
+                <span class="text" style="color:#fff"></span>
             </button>
             <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -199,14 +199,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Elige el monto que deseas donar:</p>
+                    <p class="text-center">¿Cuánto podes colaborar?</p>
                     
                     <div class="d-grid gap-2">
-                    <button class="btn btn-success btn-lg flash" type="button" onclick="link1000()">Donar $1.000</button>
-                    <button class="btn btn-primary btn-lg flash" type="button" onclick="link3000()" >Donar $3.000</button>
-                    <button class="btn btn-primary btn-lg flash" type="button" onclick="link5000()" >Donar $5.000</button>
-                    <button class="btn btn-warning btn-lg flash" type="button" onclick="link10000()">Donar $10.000</button>
-                    <button class="btn btn-warning btn-lg flash" type="button" onclick="link25000()">Donar $25.000</button>
+                    <button class="btn btn-success btn-lg flash" type="button" onclick="link1000()"> $1.000</button>
+                    <button class="btn btn-primary btn-lg flash" type="button" onclick="link3000()" > $3.000</button>
+                    <button class="btn btn-primary btn-lg flash" type="button" onclick="link5000()" > $5.000</button>
+                    <button class="btn btn-warning btn-lg flash" type="button" onclick="link10000()"> $10.000</button>
+                    <button class="btn btn-warning btn-lg flash" type="button" onclick="link25000()"> $25.000</button>
                     </div>
                 </div>
                 <div class="modal-footer">
