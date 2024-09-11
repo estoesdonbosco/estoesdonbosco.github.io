@@ -15,6 +15,30 @@ function abrirSpotify() {
     window.open(url, '_blank');
 }
 
+
+function link1000() {
+    const url = "https://mpago.la/1EREfd9";
+    window.open(url, '_blank');
+}
+function link3000() {
+    const url = "https://mpago.la/22kn4Cx";
+    window.open(url, '_blank');
+}
+
+function link5000() {
+    const url = "https://mpago.la/2axwfwa";
+    window.open(url, '_blank');
+}
+function link10000() {
+    const url = "https://mpago.la/174CuRc";
+    window.open(url, '_blank');
+}
+function link25000() {
+    const url = "https://mpago.la/32yGAzM";
+    window.open(url, '_blank');
+}
+
+
 (function ($) {
     "use strict";
 
@@ -32,6 +56,7 @@ function abrirSpotify() {
     // Initiate the wowjs
     new WOW().init();
 
+    //$('.botonesDePago').css('display', 'none');
 
     // Sticky Navbar
     $(window).scroll(function () {

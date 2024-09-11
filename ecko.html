@@ -130,24 +130,30 @@
                                      
                                 </p>
                                 
-                                <!--
-                                <div class="col-xl-12" style="height: 300px;">
+                                 
+                                <div class="col-xl-12 botonesDePago" style="height: 300px;">
                                     <div class="row mx-auto text-center">
                                         <div class="col-xs-12">
-                                            <div class="row  mx-auto text-center">
-                                                <button class="btn btn-success btn-lg col-xs-10 col-md-3 my-2   mx-1" type="button">Donar $1.000</button>
-                                           
-                                         
-                                                <button class="btn btn-primary btn-lg  col-xs-10 col-md-3 my-2   mx-1" type="button">Donar $5.000</button>
-                                          
-                                                <button class="btn btn-warning btn-lg  col-xs-10 col-md-3 my-2 mx-1" type="button">Donar $10.000</button>
+                                            <div class="row  mx-auto text-center d-none d-sm-block">
+                                                <button class="btn btn-success btn-lg col-md-2 my-2 mx-1" type="button" onclick="link1000()">Donar <br>$1.000</button>
+                                                <button class="btn btn-success btn-lg col-md-2 my-2 mx-1" type="button" onclick="link3000()">Donar <br>$3.000</button>
+                                                <button class="btn btn-primary btn-lg col-md-2 my-2 mx-1" type="button" onclick="link5000()">Donar <br>$5.000</button>
+                                                <button class="btn btn-warning btn-lg col-md-2 my-2 mx-1" type="button" onclick="link10000()">Donar <br>$10.000</button>
+                                                <button class="btn btn-warning btn-lg col-md-2 my-2 mx-1" type="button" onclick="link25000()">Donar <br>$25.000</button>
+                                            </div>   
+                                            <div class="row  mx-auto text-center d-block d-sm-none">
+                                                <button class="btn btn-success btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link1000()">Donar $1.000</button>
+                                                <button class="btn btn-success btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link3000()">Donar $3.000</button>
+                                                <button class="btn btn-primary btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link5000()">Donar $5.000</button>
+                                                <button class="btn btn-warning btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link10000()">Donar $10.000</button>
+                                                <button class="btn btn-warning btn-lg col-xs-10 my-2 mx-1" type="button" onclick="link25000()">Donar $25.000</button>
                                             </div>    
                                         </div>
                                             
     
                                           
                                     </div>
-                                </div>-->
+                                </div>
                             </div>
                             
                         </div>
@@ -180,34 +186,37 @@
         <!-- Copyright End -->
 
         <!-- Back to Top -->
-        <!--
-        <button type="button" class="btn-flotante flash btn btn-warning btn-lg-square fixed-bottom-right" style="margin-bottom: 60px;" data-bs-toggle="modal" data-bs-target="#donationModal">
-            <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
-            <span class="text" style="color:#fff">Donar</span>
-        </button>
-        <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="donationModalLabel">Selecciona una opción</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <p>Elige el monto que deseas donar:</p>
-                
-                <div class="d-grid gap-2">
-                  <button class="btn btn-success btn-lg flash" type="button">Donar $1.000</button>
-                  <button class="btn btn-primary btn-lg flash" type="button">Donar $5.000</button>
-                  <button class="btn btn-warning btn-lg flash" type="button">Donar $10.000</button>
+        <div class="botonesDePago">
+            <button type="button" class="btn-flotante flash btn btn-warning btn-lg-square fixed-bottom-right" style="margin-bottom: 60px;" data-bs-toggle="modal" data-bs-target="#donationModal">
+                <i class="fa fa-dollar-sign" style="zoom:2;color:#fff"></i> 
+                <span class="text" style="color:#fff">Donar</span>
+            </button>
+            <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="donationModalLabel">Selecciona una opción</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              </div>
+                <div class="modal-body">
+                    <p>Elige el monto que deseas donar:</p>
+                    
+                    <div class="d-grid gap-2">
+                    <button class="btn btn-success btn-lg flash" type="button" onclick="link1000()">Donar $1.000</button>
+                    <button class="btn btn-primary btn-lg flash" type="button" onclick="link3000()" >Donar $3.000</button>
+                    <button class="btn btn-primary btn-lg flash" type="button" onclick="link5000()" >Donar $5.000</button>
+                    <button class="btn btn-warning btn-lg flash" type="button" onclick="link10000()">Donar $10.000</button>
+                    <button class="btn btn-warning btn-lg flash" type="button" onclick="link25000()">Donar $25.000</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-        -->
+        
         <button onclick="abrirWhatsApp()" class="btn-flotante btn btn-primary flash btn-lg-square fixed-bottom-right">
             <i class="fab fa-whatsapp" style="zoom:2"></i>
             <span class="text" style="color:#fff">Chatea</span> 
